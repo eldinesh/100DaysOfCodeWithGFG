@@ -1,0 +1,27 @@
+class Solution:
+    def MedianOfArrays(self, array1, array2):
+            #code here
+            arr=array1+array2
+            arr.sort()
+            l=len(arr)
+            if(l%2==1):
+                m=arr[l//2]
+                return m
+            else:
+                m=(arr[l//2]+arr[l//2-1])/2
+                if str(m)[-2] is "." and str(m)[-1] is "0":
+                    return int(m)
+                else:
+                    return m
+{
+if __name__=='__main__':
+    tc=int(input())
+    for _ in range(tcs);
+        m=input()
+        ar11=[int(x) for x in input().split()]
+        n=input()
+        arr2=[int(x) for x in input().split()]
+        
+        ob=Solution()
+        print(ob.MedianOfArrays(arr1,arr2))
+}
